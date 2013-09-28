@@ -2,44 +2,60 @@
 <HEAD>
 <TITLE>Calculator</TITLE>
 
-<SCRIPT language="JavaScript">
+<SCRIPT language = JavaScript>
 function calculate() {
- 
 A = document.frmOne.txtFirstNumber.value
 B = document.frmOne.txtSecondNumber.value
- 
 A = Number(A)
 B = Number(B)
 C = (A + B)
 document.frmOne.txtThirdNumber.value = C
 }
- //complete this code................
- 
- 
- 
- 
- 
- 
- 
- 
- </HEAD>
-<BODY>
-<p><b>Mathematical Calculator.</b></p>
 
+function calculate2() {
+A = document.frmOne.txtFirstNumber.value
+B = document.frmOne.txtSecondNumber.value
+A = Number(A)
+B = Number(B)
+C = (A * B)
+document.frmOne.txtThirdNumber.value = C
+}
 
-<FORM NAME = frmOne> 
-            Number One: 
-            <INPUT TYPE = Text NAME = txtFirstNumber SIZE = 5 value =""> 
-            Number Two: 
-            <INPUT TYPE = Text NAME = txtSecondNumber SIZE = 5 value =""> 
-            <P> Total: 
-              <INPUT TYPE = Text NAME = txtThirdNumber SIZE = 5 value = ""> 
-            <P> 
-              <Input Type = Button NAME = b1 VALUE = "Add Numbers" onClick = calculate()> 
-              <Input Type = Button NAME = b2 VALUE = "Multiply Numbers" onClick = calculate2()> 
-              <Input Type = Button NAME = b3 VALUE = "Divide Numbers" onClick = calculate3()> 
-              <Input Type = Button NAME = b4 VALUE = "Subtract Numbers" onClick = calculate4()> 
-</FORM> 
+function calculate3() {
+A = document.frmOne.txtFirstNumber.value
+B = document.frmOne.txtSecondNumber.value
+A = Number(A)
+B = Number(B)
+C = (A / B)
+document.frmOne.txtThirdNumber.value = C
+}
+
+function calculate4() {
+A = document.frmOne.txtFirstNumber.value
+B = document.frmOne.txtSecondNumber.value
+A = Number(A)
+B = Number(B)
+C = (A - B)
+document.frmOne.txtThirdNumber.value = C
+}
+</script>
+
+</head>
+
+<body>
+<FORM NAME = frmOne>
+Number One: 
+<INPUT TYPE = Text NAME = txtFirstNumber SIZE = 5 value ="">
+Number Two: 
+<INPUT TYPE = Text NAME = txtSecondNumber SIZE = 5 value ="">
+<P> Total: 
+<INPUT TYPE = Text NAME = txtThirdNumber SIZE = 5 value = "">
+<P> 
+<Input Type = Button NAME = b1 VALUE = "Add Numbers" onClick = calculate()>
+<Input Type = Button NAME = b2 VALUE = "Multiply Numbers" onClick = calculate2()> 
+<Input Type = Button NAME = b3 VALUE = "Divide Numbers" onClick = calculate3()> 
+<Input Type = Button NAME = b4 VALUE = "Subtract Numbers" onClick = calculate4()> 
+</FORM>
 
 <br>
 
@@ -59,7 +75,9 @@ document.frmOne.txtThirdNumber.value = C
 
 <INPUT TYPE = Button VALUE = "Yellow Background" Onclick = "document.bgColor = 'Yellow'">
 
-<p><b><center>Written by Gheter</center></b></p>
+<p><b><center>Updated by Spencer</center></b></p>
 
-</BODY>
-</HTML>
+
+
+</body>
+</html>
